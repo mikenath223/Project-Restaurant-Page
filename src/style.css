@@ -2,15 +2,197 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 
 .topDiv {
   height: 250px;
   background: no-repeat center/100%;
-  border-bottom: 1px solid black;
 }
 
 .bottomDiv {
-  height: 600px;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  border-radius: 10px;
+  width: 80%;
+  height: 200px;
+  top: -7%;
+  left: 9%;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header>h1 {
+  font-size: 4em;
+  color: antiquewhite;
+}
+
+.header>img {
+  max-height: 200px;
+  width: auto;
+}
+
+.tabsWrap {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  height: 480px;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  padding: 20px;
+  perspective: 700px;
+}
+
+.menu, .contact {
+  width: 48%;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.menu {
+  border: 1px solid red;
+}
+
+.contact {
+  background-color: #8F1965;
+}
+
+.menuDes, .contactDes, .header>h1 {
+  font-family: cursive;
+}
+
+.menuDes, .contactDes {
+  font-size: 3em;
+  text-align: center;
+}
+
+.menuDes {
+  color: rgb(6, 20, 0);
+}
+
+.contactDes {
+  color: ghostwhite;
+}
+
+.menuBut, .contactBut {
+  font-size: 2.3em;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 1px 2px 2px gray;
+}
+
+.menuBut {
+  background-color: crimson;
+  color: #fff;
+}
+
+.contactBut {
+  background-color: rgb(43, 226, 156);
+}
+
+.menuBut:focus, .contactBut:focus {
+  outline: none;
+}
+
+.contact {
+  width: 48%;
+  border: 1px solid #000;
+}
+
+.slide-out-left {
+  position: absolute;
+  transform: rotate3d(1, 1, 0, 180deg);
+  opacity: 0;
+  transition: transform 2.5s, opacity 3s;
+}
+
+.slide-out-right {
+  position: absolute;
+  transform: rotate3d(1, 0, 1, 180deg);
+  opacity: 0;
+  transition: transform 2.5s, opacity 3s;
+}
+
+@keyframes open-l {
+  from {}
+  to {}
+}
+
+@keyframes open-r {}
+
+@media only screen and (max-width: 1030px) {
+  .header {
+    height: 250px;
+  }
+  .header>h1 {
+    font-size: 4.5em;
+  }
+  .header>img {
+    max-height: 200px;
+  }
+  .menuDes, .contactDes {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    height: 200px;
+  }
+  .header>h1 {
+    font-size: 3.5em;
+  }
+  .header>img {
+    max-height: 150px;
+  }
+  .tabsWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu, .contact {
+    width: 90%;
+  }
+  .contact {
+    margin-top: 30px;
+  }
+  .menuDes, .contactDes {
+    font-size: 2em;
+  }
+  .contactBut, .menuBut {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .header>h1 {
+    font-size: 1.5em;
+  }
+  .header>img {
+    max-height: 120px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .header {
+    top: -15%;
+    left: 8%;
+    height: 150px;
+    width: 85%;
+  }
+  .header>h1 {
+    font-size: 1.2em;
+  }
+  .header>img {
+    max-height: 100px;
+  }
 }

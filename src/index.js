@@ -1,3 +1,10 @@
 import { page_load } from './page_loader';
+import { headerComps } from './header';
+import { menu } from './menu';
+import { contact } from './contact';
+
 
 page_load();
+headerComps();
+menu();
+contact();

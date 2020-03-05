@@ -104,7 +104,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../n
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".hook {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  width: 100%;\\r\\n  height: 100%;\\r\\n}\\r\\n\\r\\n.topDiv {\\r\\n  height: 250px;\\r\\n  background: no-repeat center/100%;\\r\\n  border-bottom: 1px solid black;\\r\\n}\\r\\n\\r\\n.bottomDiv {\\r\\n  height: 600px;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".hook {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.topDiv {\\r\\n  height: 250px;\\r\\n  background: no-repeat center/100%;\\r\\n}\\r\\n\\r\\n.bottomDiv {\\r\\n  position: relative;\\r\\n}\\r\\n\\r\\n.header {\\r\\n  position: absolute;\\r\\n  border-radius: 10px;\\r\\n  width: 80%;\\r\\n  height: 200px;\\r\\n  top: -7%;\\r\\n  left: 9%;\\r\\n  background-color: blueviolet;\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.header>h1 {\\r\\n  font-size: 4em;\\r\\n  color: antiquewhite;\\r\\n}\\r\\n\\r\\n.header>img {\\r\\n  max-height: 200px;\\r\\n  width: auto;\\r\\n}\\r\\n\\r\\n.tabsWrap {\\r\\n  display: flex;\\r\\n  position: relative;\\r\\n  justify-content: space-around;\\r\\n  height: 480px;\\r\\n  margin-top: 20%;\\r\\n  margin-bottom: 10%;\\r\\n  padding: 20px;\\r\\n  perspective: 700px;\\r\\n}\\r\\n\\r\\n.menu, .contact {\\r\\n  width: 48%;\\r\\n  display: flex;\\r\\n  display: none;\\r\\n  flex-direction: column;\\r\\n  align-items: center;\\r\\n  justify-content: space-around;\\r\\n  padding: 50px;\\r\\n  border-radius: 15px;\\r\\n}\\r\\n\\r\\n.menu {\\r\\n  border: 1px solid red;\\r\\n}\\r\\n\\r\\n.contact {\\r\\n  background-color: #8F1965;\\r\\n}\\r\\n\\r\\n.menuDes, .contactDes, .header>h1 {\\r\\n  font-family: cursive;\\r\\n}\\r\\n\\r\\n.menuDes, .contactDes {\\r\\n  font-size: 3em;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n.menuDes {\\r\\n  color: rgb(6, 20, 0);\\r\\n}\\r\\n\\r\\n.contactDes {\\r\\n  color: ghostwhite;\\r\\n}\\r\\n\\r\\n.menuBut, .contactBut {\\r\\n  font-size: 2.3em;\\r\\n  padding: 10px 15px;\\r\\n  border-radius: 15px;\\r\\n  margin-top: 15px;\\r\\n  box-shadow: 1px 2px 2px gray;\\r\\n}\\r\\n\\r\\n.menuBut {\\r\\n  background-color: crimson;\\r\\n  color: #fff;\\r\\n}\\r\\n\\r\\n.contactBut {\\r\\n  background-color: rgb(43, 226, 156);\\r\\n}\\r\\n\\r\\n.menuBut:focus, .contactBut:focus {\\r\\n  outline: none;\\r\\n}\\r\\n\\r\\n.contact {\\r\\n  width: 48%;\\r\\n  border: 1px solid #000;\\r\\n}\\r\\n\\r\\n.slide-out-left {\\r\\n  position: absolute;\\r\\n  transform: rotate3d(1, 1, 0, 180deg);\\r\\n  opacity: 0;\\r\\n  transition: transform 2.5s, opacity 3s;\\r\\n}\\r\\n\\r\\n.slide-out-right {\\r\\n  position: absolute;\\r\\n  transform: rotate3d(1, 0, 1, 180deg);\\r\\n  opacity: 0;\\r\\n  transition: transform 2.5s, opacity 3s;\\r\\n}\\r\\n\\r\\n@keyframes open-l {\\r\\n  from {}\\r\\n  to {}\\r\\n}\\r\\n\\r\\n@keyframes open-r {}\\r\\n\\r\\n@media only screen and (max-width: 1030px) {\\r\\n  .header {\\r\\n    height: 250px;\\r\\n  }\\r\\n  .header>h1 {\\r\\n    font-size: 4.5em;\\r\\n  }\\r\\n  .header>img {\\r\\n    max-height: 200px;\\r\\n  }\\r\\n  .menuDes, .contactDes {\\r\\n    font-size: 2.5em;\\r\\n  }\\r\\n}\\r\\n\\r\\n@media only screen and (max-width: 800px) {\\r\\n  .header {\\r\\n    height: 200px;\\r\\n  }\\r\\n  .header>h1 {\\r\\n    font-size: 3.5em;\\r\\n  }\\r\\n  .header>img {\\r\\n    max-height: 150px;\\r\\n  }\\r\\n  .tabsWrap {\\r\\n    flex-direction: column;\\r\\n    align-items: center;\\r\\n  }\\r\\n  .menu, .contact {\\r\\n    width: 90%;\\r\\n  }\\r\\n  .contact {\\r\\n    margin-top: 30px;\\r\\n  }\\r\\n  .menuDes, .contactDes {\\r\\n    font-size: 2em;\\r\\n  }\\r\\n  .contactBut, .menuBut {\\r\\n    font-size: 1.5em;\\r\\n  }\\r\\n}\\r\\n\\r\\n@media only screen and (max-width: 430px) {\\r\\n  .header>h1 {\\r\\n    font-size: 1.5em;\\r\\n  }\\r\\n  .header>img {\\r\\n    max-height: 120px;\\r\\n  }\\r\\n}\\r\\n\\r\\n@media only screen and (max-width: 330px) {\\r\\n  .header {\\r\\n    top: -15%;\\r\\n    left: 8%;\\r\\n    height: 150px;\\r\\n    width: 85%;\\r\\n  }\\r\\n  .header>h1 {\\r\\n    font-size: 1.2em;\\r\\n  }\\r\\n  .header>img {\\r\\n    max-height: 100px;\\r\\n  }\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -143,6 +143,30 @@ eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtim
 
 /***/ }),
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/*! exports provided: contact */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"contact\", function() { return contact; });\nconst contact = () => {\r\n  const createElem = elem => document.createElement(elem);\r\n  const contact = document.querySelector('.contact');\r\n  const contactDes = createElem('p');\r\n  const contactBut = createElem('button');\r\n  contact.append(contactDes, contactBut);\r\n  contactDes.classList.add('contactDes');\r\n  contactBut.classList.add('contactBut');\r\n  contactDes.textContent = \"Have complaints or suggestions? Kindly reach out to us.\"\r\n  contactBut.textContent = \"Contact us\"\r\n}\r\n\r\n\n\n//# sourceURL=webpack:///./src/contact.js?");
+
+/***/ }),
+
+/***/ "./src/food-blue.jpg":
+/*!***************************!*\
+  !*** ./src/food-blue.jpg ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"b744fd80453bc10e38302a11f1bc1a3d.jpg\");\n\n//# sourceURL=webpack:///./src/food-blue.jpg?");
+
+/***/ }),
+
 /***/ "./src/food-tray.svg":
 /*!***************************!*\
   !*** ./src/food-tray.svg ***!
@@ -167,6 +191,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/*! exports provided: headerComps */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"headerComps\", function() { return headerComps; });\n/* harmony import */ var _food_tray_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./food-tray.svg */ \"./src/food-tray.svg\");\n\r\n\r\nconst headerComps = () => {\r\n  const head = document.querySelector(\".header\");\r\n  const createElem = elem => document.createElement(elem);\r\n\r\n  const headText = createElem(\"h1\");\r\n  const headIcon = createElem(\"img\");\r\n  headIcon.setAttribute(\"src\", _food_tray_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\r\n  headIcon.setAttribute(\"alt\", \"icon\");\r\n  head.append(headText, headIcon)\r\n  headText.textContent = \"The Clinkers\";\r\n}\r\n\r\n\n\n//# sourceURL=webpack:///./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -175,7 +211,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page_loader */ \"./src/page_loader.js\");\n\r\n\r\nObject(_page_loader__WEBPACK_IMPORTED_MODULE_0__[\"page_load\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page_loader */ \"./src/page_loader.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_page_loader__WEBPACK_IMPORTED_MODULE_0__[\"page_load\"])();\r\nObject(_header__WEBPACK_IMPORTED_MODULE_1__[\"headerComps\"])();\r\nObject(_menu__WEBPACK_IMPORTED_MODULE_2__[\"menu\"])();\r\nObject(_contact__WEBPACK_IMPORTED_MODULE_3__[\"contact\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/*! exports provided: menu */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"menu\", function() { return menu; });\nconst menu = () => {\r\n  const createElem = elem => document.createElement(elem);\r\n  const menu = document.querySelector('.menu');\r\n  const menuDes = createElem('p');\r\n  const menuBut = createElem('button');\r\n  menu.append(menuDes, menuBut);\r\n  menuDes.classList.add('menuDes');\r\n  menuBut.classList.add('menuBut');\r\n  menuDes.textContent = \"Explore our diverse international cuisines crafted just for you.\"\r\n  menuBut.textContent = \"Open Menu\"\r\n  menuBut.addEventListener('click', () => {\r\n    const contact = document.querySelector('.contact');\r\n    menu.classList.add('slide-out-left');\r\n    contact.classList.add('slide-out-right');\r\n  })\r\n}\r\n\r\n\n\n//# sourceURL=webpack:///./src/menu.js?");
 
 /***/ }),
 
@@ -187,7 +235,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"page_load\", function() { return page_load; });\n/* harmony import */ var _food_tray_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./food-tray.svg */ \"./src/food-tray.svg\");\n/* harmony import */ var _food_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./food.jpg */ \"./src/food.jpg\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _Normalize_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Normalize.css */ \"./src/Normalize.css\");\n/* harmony import */ var _Normalize_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Normalize_css__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\nconst page_load = () => {\r\n  const hook = document.querySelector(\"#content\");\r\n  const createElem = elem => document.createElement(elem);\r\n\r\n  const topDiv = createElem(\"div\");\r\n  const bottomDiv = createElem(\"div\");\r\n  hook.append(topDiv, bottomDiv);\r\n  hook.classList.add(\"hook\");\r\n  topDiv.classList.add(\"topDiv\");\r\n  bottomDiv.classList.add(\"bottomDiv\");\r\n  topDiv.style.backgroundImage = `url(${_food_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]})`;\r\n\r\n  return;\r\n};\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/page_loader.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"page_load\", function() { return page_load; });\n/* harmony import */ var _food_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./food.jpg */ \"./src/food.jpg\");\n/* harmony import */ var _food_blue_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./food-blue.jpg */ \"./src/food-blue.jpg\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _Normalize_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Normalize.css */ \"./src/Normalize.css\");\n/* harmony import */ var _Normalize_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Normalize_css__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\nconst createElem = elem => document.createElement(elem);\r\nconst tabs = (parent) => {\r\n  const tabsWrap = createElem(\"div\");\r\n  const menu = createElem(\"div\");\r\n  const contact = createElem(\"div\");\r\n  parent.appendChild(tabsWrap);\r\n  tabsWrap.append(menu, contact);\r\n  tabsWrap.classList.add(\"tabsWrap\");\r\n  menu.classList.add(\"menu\");\r\n  menu.style.backgroundImage = `url(${_food_blue_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]})`;\r\n  contact.classList.add(\"contact\");\r\n};\r\n\r\nconst page_load = () => {\r\n  const hook = document.querySelector(\"#content\");\r\n\r\n  const topDiv = createElem(\"div\");\r\n  const bottomDiv = createElem(\"div\");\r\n  const header = createElem(\"div\");\r\n  hook.append(topDiv, bottomDiv);\r\n  bottomDiv.appendChild(header);\r\n  header.classList.add(\"header\");\r\n  hook.classList.add(\"hook\");\r\n  topDiv.classList.add(\"topDiv\");\r\n  bottomDiv.classList.add(\"bottomDiv\");\r\n  topDiv.style.backgroundImage = `url(${_food_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]})`;\r\n\r\n  tabs(bottomDiv);\r\n  return;\r\n};\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/page_loader.js?");
 
 /***/ }),
 
