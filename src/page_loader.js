@@ -22,12 +22,17 @@ const page_load = () => {
   const topDiv = createElem("div");
   const bottomDiv = createElem("div");
   const header = createElem("div");
+  const table = createElem('div');
+  const intro = createElem('p');
   hook.append(topDiv, bottomDiv);
-  bottomDiv.appendChild(header);
+  bottomDiv.append(header, table, intro);
   header.classList.add("header");
   hook.classList.add("hook");
   topDiv.classList.add("topDiv");
   bottomDiv.classList.add("bottomDiv");
+  table.classList.add('table');
+  intro.classList.add('intro');
+  intro.textContent = "One thousand favors in one place!";
   topDiv.style.backgroundImage = `url(${BgImg})`;
 
   tabs(bottomDiv);

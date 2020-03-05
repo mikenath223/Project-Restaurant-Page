@@ -11,10 +11,16 @@
 
 .bottomDiv {
   position: relative;
+  height: 1050px;
+}
+
+.intro {
+  top: 15%;
+  color: rgb(24, 3, 53);
+  left: 15%;
 }
 
 .header {
-  position: absolute;
   border-radius: 10px;
   width: 80%;
   height: 200px;
@@ -26,8 +32,11 @@
   align-items: center;
 }
 
-.header>h1 {
+.header>h1, .intro {
   font-size: 4em;
+}
+
+.header>h1 {
   color: antiquewhite;
 }
 
@@ -66,7 +75,7 @@
   background-color: #8F1965;
 }
 
-.menuDes, .contactDes, .header>h1 {
+.menuDes, .contactDes, .header>h1,.intro {
   font-family: cursive;
 }
 
@@ -109,32 +118,38 @@
   border: 1px solid #000;
 }
 
-.slide-out-left {
+.slide-out-left, .slide-out-right, .intro, .table, .header {
   position: absolute;
+}
+
+.slide-out-left {
   transform: rotate3d(1, 1, 0, 180deg);
   opacity: 0;
   transition: transform 2.5s, opacity 3s;
 }
 
 .slide-out-right {
-  position: absolute;
   transform: rotate3d(1, 0, 1, 180deg);
   opacity: 0;
   transition: transform 2.5s, opacity 3s;
 }
 
-@keyframes open-l {
-  from {}
-  to {}
+.table {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  top: 28%;
+  left: 5%;
+  width: 90%;
+  z-index: 10;
+  height: 700px;
+  border: 1px solid black;
 }
-
-@keyframes open-r {}
 
 @media only screen and (max-width: 1030px) {
   .header {
     height: 250px;
   }
-  .header>h1 {
+  .header>h1, .intro {
     font-size: 4.5em;
   }
   .header>img {
@@ -149,7 +164,7 @@
   .header {
     height: 200px;
   }
-  .header>h1 {
+  .header>h1, .intro {
     font-size: 3.5em;
   }
   .header>img {
@@ -174,7 +189,7 @@
 }
 
 @media only screen and (max-width: 430px) {
-  .header>h1 {
+  .header>h1, .intro {
     font-size: 1.5em;
   }
   .header>img {
@@ -189,7 +204,7 @@
     height: 150px;
     width: 85%;
   }
-  .header>h1 {
+  .header>h1, .intro {
     font-size: 1.2em;
   }
   .header>img {
