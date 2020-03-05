@@ -1,0 +1,16 @@
+.hook {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.topDiv {
+  height: 250px;
+  background: no-repeat center/100%;
+  border-bottom: 1px solid black;
+}
+
+.bottomDiv {
+  height: 600px;
+}
