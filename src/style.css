@@ -159,7 +159,7 @@
   transition: all 2.6s ease-in;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 10px;
-  top: 35%;
+  top: 32%;
   left: 5%;
   width: 90%;
   z-index: 10;

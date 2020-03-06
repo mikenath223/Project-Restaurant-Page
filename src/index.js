@@ -1,11 +1,10 @@
-import { page_load } from './page_loader';
-import { headerComps } from './header';
-import { menu } from './menu';
-import { contact } from './contact';
-import { tableMenu } from './menu';
+import pageLoad from './pageLoader';
+import headerComps from './header';
+import { menu, tableMenu } from './menu';
+import contact from './contact';
 
 
-page_load();
+pageLoad();
 headerComps();
 menu();
 tableMenu();
