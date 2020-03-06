@@ -108,7 +108,9 @@ const menu = () => {
     } else {
       switchOut();
     }
-    document.querySelector('.table').style.transform = 'translateX(0px)';
+    const table = document.querySelector('.table');
+    table.classList.add('height-table');
+    table.style.transform = 'translateX(0px)';
   });
 };
 

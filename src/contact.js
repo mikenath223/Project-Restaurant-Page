@@ -14,7 +14,7 @@ const contact = () => {
     document.querySelector('.table').style.transform = 'translateX(-1800px)';
     const menu = document.querySelector('.menu');
     const contact = document.querySelector('.contact');
-
+    document.querySelector('.table').classList.remove('height-table');
     const switchIn = () => {
       contact.style.visibility = 'visible';
       contact.style.width = '48%';
@@ -25,6 +25,7 @@ const contact = () => {
     const switchOut = () => {
       menu.style.visibility = 'hidden';
       contact.style.width = '90%';
+      contact.classList.add('translate');
     };
     if (menu.classList.value.indexOf('slide-out-left') !== -1) {
       switchIn();

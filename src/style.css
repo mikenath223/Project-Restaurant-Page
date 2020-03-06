@@ -1,3 +1,8 @@
+html, body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
 .hook {
   display: flex;
   flex-direction: column;
@@ -158,11 +163,15 @@
   transform: translateX(-1800px);
   transition: all 2.6s ease-in;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-  gap: 10px;
+  gap: 30px;
   top: 32%;
   left: 5%;
   width: 90%;
   z-index: 10;
+  height: 220px;
+}
+
+.height-table {
   height: 720px;
 }
 
@@ -170,7 +179,7 @@
   position: relative;
   text-align: center;
   overflow: hidden;
-  background-color: rgba(192, 192, 192, 0.1);
+  background-color: rgba(192, 192, 192, 0.2);
   border-radius: 15px;
 }
 
@@ -190,7 +199,7 @@
 }
 
 .itemInfo {
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: rgb(204, 85, 6);
   color: #fff;
   width: 50%;
@@ -237,6 +246,16 @@
   .menuDes, .contactDes {
     font-size: 2.5em;
   }
+  .tabsWrap {
+    margin-top: 30%;
+  }
+  .intro {
+    top: 14%;
+    font-size: 2.5em;
+  }
+  .menuBut {
+    left: 25%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -249,12 +268,27 @@
   .header>img {
     max-height: 150px;
   }
+  .intro {
+    font-size: 2.3em;
+    left: 15%;
+    top: 12%;
+  }
+  .bottomDiv {
+    height: min-content;
+  }
+  .translate {
+    transition: transform 2s;
+    transform: translateY(-400px);
+  }
   .tabsWrap {
+    margin-top: 35%;
     flex-direction: column;
     align-items: center;
+    height: 800px;
   }
   .menu, .contact {
     width: 90%;
+    height: 100%;
   }
   .contact {
     margin-top: 30px;
@@ -263,10 +297,27 @@
     font-size: 2em;
   }
   .contactBut, .menuBut {
+    top: 17%;
     font-size: 1.5em;
   }
   .table {
+    top: 30%;
     grid-template: repeat(6, 1fr) / 1fr;
+    margin-bottom: 70px;
+    padding: 0 20px;
+  }
+  .height-table {
+    height: 2500px;
+  }
+  .itemDescript {
+    margin-top: 30%;
+    font-size: 1.3em;
+  }
+  .itemImg {
+    margin-top: 10%;
+  }
+  .itemPrice {
+    left: 84%;
   }
 }
 
@@ -276,6 +327,40 @@
   }
   .header>img {
     max-height: 120px;
+  }
+  .intro {
+    left: 9%;
+  }
+  .tabsWrap {
+    margin-top: 55%;
+  }
+  .itemDescript {
+    font-size: 1em;
+  }
+  .contactBut,
+  .menuBut {
+    top: 16%;
+    font-size: 1em;
+  }
+  .menuBut {
+    left: 18%;
+  }
+  .contactBut {
+    left: 55%;
+  }
+  .table {
+    top: 25%;
+  }
+  .itemImg {
+    margin-top: 25%;
+  }
+  .itemDescript {
+    font-size: 1em;
+    margin-top: 40%;
+  }
+  .itemPrice {
+    left: 76%;
+    font-size: 1em;
   }
 }
 
