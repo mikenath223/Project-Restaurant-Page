@@ -16,8 +16,13 @@ const contact = () => {
     const contact = document.querySelector('.contact');
     document.querySelector('.table').classList.remove('height-table');
     const switchIn = () => {
+      if (window.matchMedia('(max-width: 800px)')) {
+        contact.style.width = '100%';
+        contact.classList.remove('translate');
+      } else {
+        contact.style.width = '48%';
+      }
       contact.style.visibility = 'visible';
-      contact.style.width = '48%';
       menu.style.visibility = 'visible';
       menu.classList.replace('slide-out-left', 'slide-in-left');
       contact.classList.replace('slide-out-right', 'slide-in-right');
