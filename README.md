@@ -58,7 +58,7 @@ This project was built with these tools:
 **Michgolden Ukeje**
 
 - Github: [@mikenath223](https://github.com/mikenath223)
-- Twitter: [@Michgolden_Nath](https://twitter.com/Michgolden_Nath)
+- Twitter: [@Michgolden_Nath](https://twitter.com/MichgoldenU)
 - Linkedin: [Ukeje Michgolden](https://https://www.linkedin.com/in/michgoldenukeje/)
 <br />
 <br />
