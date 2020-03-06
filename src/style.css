@@ -90,7 +90,8 @@ html, body {
 }
 
 .menuDes {
-  color: rgb(6, 20, 0);
+  color: #fff;
+  font-weight: 700;
 }
 
 .contactDes {
@@ -179,7 +180,7 @@ html, body {
   position: relative;
   text-align: center;
   overflow: hidden;
-  background-color: rgba(192, 192, 192, 0.2);
+  background-color: rgba(192, 192, 192, 0.4);
   border-radius: 15px;
 }
 
@@ -378,5 +379,37 @@ html, body {
   }
   .header>img {
     max-height: 100px;
+  }
+  .intro {
+    top: 2%;
+  }
+  .menuBut,
+  .contactBut {
+    top: 4%;
+    font-size: 0.9em;
+  }
+  .tabsWrap {
+    margin-top: 30%;
+  }
+  .contact,
+  .menu {
+    font-size: 0.8em;
+  }
+  .table {
+    top: 13%;
+  }
+  .itemInfo {
+    width: 80%;
+  }
+  .itemImg {
+    margin-top: 35%;
+  }
+  .itemDescript {
+    width: 90%;
+    margin-top: 70%;
+    margin-left: 2%;
+  }
+  .itemPrice {
+    left: 72%;
   }
 }
