@@ -21,7 +21,7 @@
   </h3>
 
   <p align="center">
- A Restaurang page Project for Microverse curriculum. Its also part of the <a href="https://www.theodinproject.com/courses/javascript/lessons/restaurant-page">Odin project curriculum.</a>
+ A Restaurant page project for Microverse curriculum. Its also part of the <a href="https://www.theodinproject.com/courses/javascript/lessons/restaurant-page">Odin project curriculum.</a>
     <br />
 
   </p>
