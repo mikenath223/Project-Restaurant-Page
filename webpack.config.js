@@ -1,26 +1,26 @@
-const path = require("path");
+const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   plugins: [new CleanWebpackPlugin({
-    exclude: ["dist/index.html"],
+    exclude: ['dist/index.html'],
     preview: true,
   })],
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
-      }
-    ]
-  }
+        use: ['file-loader'],
+      },
+    ],
+  },
 };
