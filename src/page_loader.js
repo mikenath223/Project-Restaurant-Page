@@ -32,7 +32,7 @@ const page_load = () => {
   bottomDiv.classList.add("bottomDiv");
   table.classList.add('table');
   intro.classList.add('intro');
-  intro.textContent = "One thousand favors in one place!";
+  intro.textContent = "A thousand favors in one place!";
   topDiv.style.backgroundImage = `url(${BgImg})`;
 
   tabs(bottomDiv);

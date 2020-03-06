@@ -11,13 +11,14 @@
 
 .bottomDiv {
   position: relative;
-  height: 1050px;
+  height: 1200px;
 }
 
 .intro {
-  top: 15%;
+  font-size: 3em;
+  top: 12%;
   color: rgb(24, 3, 53);
-  left: 15%;
+  left: 25%;
 }
 
 .header {
@@ -32,7 +33,7 @@
   align-items: center;
 }
 
-.header>h1, .intro {
+.header>h1 {
   font-size: 4em;
 }
 
@@ -47,7 +48,6 @@
 
 .tabsWrap {
   display: flex;
-  position: relative;
   justify-content: space-around;
   height: 480px;
   margin-top: 20%;
@@ -59,12 +59,12 @@
 .menu, .contact {
   width: 48%;
   display: flex;
-  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 50px;
   border-radius: 15px;
+  z-index: -3;
 }
 
 .menu {
@@ -75,7 +75,7 @@
   background-color: #8F1965;
 }
 
-.menuDes, .contactDes, .header>h1,.intro {
+.menuDes, .contactDes, .header>h1,.intro, .itemInfo {
   font-family: cursive;
 }
 
@@ -93,6 +93,8 @@
 }
 
 .menuBut, .contactBut {
+  position: absolute;
+  top: 18%;
   font-size: 2.3em;
   padding: 10px 15px;
   border-radius: 15px;
@@ -103,10 +105,12 @@
 .menuBut {
   background-color: crimson;
   color: #fff;
+  left: 30%;
 }
 
 .contactBut {
   background-color: rgb(43, 226, 156);
+  left: 50%;
 }
 
 .menuBut:focus, .contactBut:focus {
@@ -115,6 +119,7 @@
 
 .contact {
   width: 48%;
+  transition: width 3s;
   border: 1px solid #000;
 }
 
@@ -134,15 +139,89 @@
   transition: transform 2.5s, opacity 3s;
 }
 
+.slide-in-left {
+  transform: rotate3d(1, 1, 0, 0deg);
+  opacity: 1;
+  transition: transform 2.5s, opacity 3s;
+}
+
+.slide-in-right {
+  transform: rotate3d(1, 0, 1, 0deg);
+  opacity: 1;
+  transition: transform 2.5s, opacity 3s;
+}
+
 .table {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  top: 28%;
+  background-color: #fff;
+  position: absolute;
+  transform: translateX(-1800px);
+  transition: all 2.6s ease-in;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 10px;
+  top: 35%;
   left: 5%;
   width: 90%;
   z-index: 10;
-  height: 700px;
-  border: 1px solid black;
+  height: 720px;
+}
+
+.itemWrap {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(192, 192, 192, 0.1);
+  border-radius: 15px;
+}
+
+.itemImg {
+  max-width: 170px;
+  height: auto;
+  margin-top: 15%;
+  border-radius: 50%;
+}
+
+.itemDes {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 100%;
+  height: 100%;
+}
+
+.itemInfo {
+  margin-top: 10px;
+  background-color: rgb(204, 85, 6);
+  color: #fff;
+  width: 50%;
+  padding: 5px 0 5px 15px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.itemDescript {
+  margin-top: 48%;
+  margin-left: 18%;
+  font-size: 0.8em;
+  width: 60%;
+  padding: 5px;
+  border: 2px solid silver;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.itemPrice {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 79%;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: left;
+  width: 90px;
+  font-size: 1.3em;
+  background-color: rgb(204, 85, 6);
 }
 
 @media only screen and (max-width: 1030px) {
