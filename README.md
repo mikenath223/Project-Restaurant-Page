@@ -36,7 +36,7 @@ This project involves dynamically generating page contents with javascript using
 
 # Validations
 
--ESLINT
+- ESLint
 
 # Get Started
 
@@ -49,9 +49,9 @@ This project involves dynamically generating page contents with javascript using
 
 This project was built with these tools:
 
-* JAVASCRIPT
+* JavaScript
 * HTML
-* CSS3
+* CSS
 
 # Author
 
